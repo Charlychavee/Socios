@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">﻿
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    
+    <title>Socios</title>
+</head>
+<body>
+<div class="content">
+
+<div class="row">
+    		<div class="col-lg-1">
+    			<ul class="nav flex-column">
+			 
+			  <li class="nav-item">
+			    <button type="button" class="btn btn-dark" href="#">Socios</button>
+			  </li>
+						    <li class="nav-item">
+			    <button type="button" class="btn btn-dark" href="#">Consultas</button>
+				</li>
+				</ul>
+    		</div>
+
+    		<div class="col-lg-11">
+
+	<div class="container">
+		<h1 class="text-center">Socios</h1>
+    	<hr>
+
+    	<div class="row">
+    		<div class="col-lg-6 col-md-6 col-sm-6"></div>
+    		<div class="col-lg-3 col-md-3 col-sm-3">
+    			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Agregar Socio</button>
+
+    		</div>
+    		<div class="col-lg-3 col-md-3 col-sm-3">
+    			<input class="form-control" type="text" placeholder="Buscar">
+    		</div>
+    	</div>
+    	<br>
+    	<table class="table table-striped text-center">
+    		<thead>
+    			<tr>
+    				<th>No Membresia</th>
+    				<th>Titular</th>
+    				<th>Cobertura</th>
+    				<th>Detalles</th>
+    			</tr>
+
+    		</thead>
+    		<tbody>
+    			<tr>
+    				<td>001</td>
+    				<td>Felipe Zamora Fuentes</td>
+    				<td>Amplio</td>
+    				<td>
+    					<button class="btn btn-success">Ver</button>
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td>002</td>
+    				<td>Itzel Silva Contreras</td>
+    				<td>Minima</td>
+    				<td>
+    					<button class="btn btn-success">Ver</button>
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td>003</td>
+    				<td>Stephania Fletes Gonzales</td>
+    				<td>Amplio</td>
+    				<td>
+    					<button class="btn btn-success">Ver</button>
+    				</td>
+    			</tr>
+				
+				<tr>
+					<td>004</td>
+					<td>Juan Perez Vaca</td>
+					<td>Amplio</td>
+					<td>
+						<button class="btn btn-success">Ver</button>
+					</td>
+				</tr>
+
+    		</tbody>
+    	</table>
+
+		<!-- Modal -->
+			<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">
+			    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Agregar Socios</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+
+		      	  <div class="row">
+   	 				<div class="col-lg-2">
+     				 <label class="form">Nombre: </label>
+				    </div>
+				    <div class="col-lg-5">
+				     <input class="form-control" type="text" name="Nombre">
+				    </div>
+				    <div class="col-lg-5">
+				    <img src="..." alt="..." class="img-thumbnail">
+				    <br>
+				    <button type="button" class="btn btn-link">Subir imagen</button>
+				    </div>
+				  </div>
+				  <br>
+
+					<div class="row">
+   	 				<div class="col-lg-2">
+     				 <label class="form">Cobertura: </label>
+				    </div>
+				    <div class="col-lg-5">
+
+				     <div class="btn-group" role="group">
+    					<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				      --Seleccione Cobertura--
+				    </button>
+				    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+				      <a class="dropdown-item" href="#">Amplia</a>
+				      <a class="dropdown-item" href="#">Minima</a>
+				    </div>
+				  </div>
+
+				    </div>
+				  </div>
+				  <br>
+
+				 <div class="row">
+   	 				<div class="col-lg-2">
+     				 <label class="form">Profesión: </label>
+				    </div>
+				    <div class="col-lg-5">
+				     <input class="form-control" type="text" name="Profesión">
+				    </div>
+				</div>
+				<br>
+
+				 <div class="row">
+   	 				<div class="col-lg-2">
+     				 <label class="form">Estado civil: </label>
+				    </div>
+				    <div class="col-lg-5">
+				     <div class="btn-group" role="group">
+    					<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				      --Estado Civil--
+				    </button>
+				    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+				      <a class="dropdown-item" href="#">Soltero</a>
+				      <a class="dropdown-item" href="#">Casado</a>
+				      <a class="dropdown-item" href="#">Viudo</a>
+				      <a class="dropdown-item" href="#">Divorciado</a>
+				    </div>
+				  </div>
+				    </div>
+				  </div>
+				  <br>
+
+				  <div class="row">
+   	 				<div class="col-lg-1">
+     				 <label class="form">Sexo: </label>
+				    </div>
+				    <div class="col-lg-4">
+				     <div class="btn-group" role="group">
+    					<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				      --Seleccione Sexo--
+				    </button>
+				    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+				      <a class="dropdown-item" href="#">Hombre</a>
+				      <a class="dropdown-item" href="#">Mujer</a>
+				    </div>
+				  </div>
+				    </div>
+				    <div class="col-lg-3">
+     				 <label class="form">Fecha de Nacimiento: </label>
+				    </div>
+				    <div class="col-lg-4">
+				     <input type="date" id="date">
+				    </div>
+				  </div>
+				</div>
+
+				<div class="modal-header">
+		      <h5 >Domicilio</h5>
+		      <br>
+		  </div>
+		      <div class="modal-body">
+
+					<div class="row">
+   	 				<div class="col-lg-2">
+     				 <label class="form">Direccion: </label>
+				    </div>
+				    <div class="col-lg-4">
+				     <input class="form-control" type="text" name="Sexo">
+				    </div>
+				    <div class="col-lg-2">
+     				 <label class="form">Colonia:  </label>
+				    </div>
+				    <div class="col-lg-4">
+				     <input class="form-control" type="text" name="FechaNa">
+				    </div>
+				</div>
+				    <br>
+
+				    <div class="row">
+   	 				<div class="col-lg-2">
+     				 <label class="form">Municipio: </label>
+				    </div>
+				    <div class="col-lg-4">
+				     <input class="form-control" type="text" name="Municipio">
+				    </div>
+				    <div class="col-lg-2">
+     				 <label class="form">Estado:  </label>
+				    </div>
+				    <div class="col-lg-4">
+				     <input class="form-control" type="text" name="Estado">
+				    </div>
+				</div>
+				    <br>
+				    <div class="row">
+   	 				<div class="col-lg-2">
+     				 <label class="form">Pais: </label>
+				    </div>
+				    <div class="col-lg-4">
+				     <input class="form-control" type="text" name="Pais">
+				    </div>
+				    <div class="col-lg-2">
+     				 <label class="form">C.P:  </label>
+				    </div>
+				    <div class="col-lg-4">
+				     <input class="form-control" type="text" name="C.P">
+				    </div>
+				</div>
+				    <br>
+
+				    <div class="modal-header">
+		      <h5 >Contacto</h5>
+		      <br>
+		  </div>
+		      <div class="modal-body">
+
+					<div class="row">
+   	 				<div class="col-lg-2">
+     				 <label class="form">Telefono: </label>
+				    </div>
+				    <div class="col-lg-4">
+				     <input class="form-control" type="text" name="Telefono">
+				    </div>
+				    <div class="col-lg-2">
+     				 <label class="form">e-mail:  </label>
+				    </div>
+				    <div class="col-lg-4">
+				     <input class="form-control" type="text" name="mail">
+				    </div>
+				</div>
+				    <br>
+
+				     <div class="modal-header">
+				      <h5 >Asociados</h5>
+				      <br>
+				  	</div>
+
+				  	<div class="row">
+   	 				<div class="col-lg-8">
+				    </div>
+				    <div class="col-lg-4">
+				     <button type="button" class="btn btn-primary" >Agregar Asociados</button>
+				    </div>
+				  	
+				  	
+						<table class="table table-bordered">
+						  <thead>
+						    <tr>
+						 <th scope="col">No. Membresia</th>
+					      <th scope="col">Asociado</th>
+					      <th scope="col">Detalles</th>
+					    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row"></th>
+						      <td></td>
+						      <td></td>
+
+						    </tr>
+
+						    <tr>
+						      <th scope="row"></th>
+						      <td></td>
+						      <td></td>
+
+						    </tr>
+
+						    <tr>
+						      <th scope="row"></th>
+						      <td></td>
+						      <td></td>
+
+						    </tr>
+						    </tbody>
+							</table>
+
+				  <div class="modal-footer">
+
+				 <div class="row">
+
+   	 				<div class="col-lg-2">
+				    </div>
+
+				    <div class="col-lg-6">
+		        	<button type="button" class="btn btn-primary">Agregar Socio</button>
+		        	</div>
+
+					<div class="col-lg-2">
+			    	</div>
+			    </div>
+
+    		</div>
+    		
+    	</div>
+    	<br>
+
+		</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
