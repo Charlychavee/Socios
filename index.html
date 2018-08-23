@@ -11,22 +11,28 @@
     <title>Socios</title>
 </head>
 <body>
-<div class="content">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Menú</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
 
-<div class="row">
-    		<div class="col-lg-1">
-    			<ul class="nav flex-column">
-			 
-			  <li class="nav-item">
-				<a href="index.html" target="_self" button type="button" class="btn btn-dark">Socios</a>
-			  </li>
-					<li class="nav-item">
-			    <a href="especialistas.html" target="_self" button type="button" class="btn btn-dark" >Especialistas</a>
-				</li>
-				</ul>
-    		</div>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item ">
+		        <a class="nav-link" href="index.html">Socios </span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="consultas.html">Consultas</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="especialistas.html">Especialistas</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
 
-    		<div class="col-lg-10">
+    <div class="col-lg-11">
 
 	<div class="container">
 		<h1 class="text-center">Socios</h1>
@@ -59,7 +65,7 @@
     				<td>Felipe Zamora Fuentes</td>
     				<td>Amplio</td>
     				<td>
-    					<button class="btn btn-success">Ver</button>
+    					<button class="btn btn-success"data-toggle="modal" data-target=".bd-example-modal-lg">Ver</button>
     				</td>
     			</tr>
 
@@ -68,7 +74,7 @@
     				<td>Itzel Silva Contreras</td>
     				<td>Minima</td>
     				<td>
-    					<button class="btn btn-success">Ver</button>
+    					<button class="btn btn-success"data-toggle="modal" data-target=".bd-example-modal-lg1">Ver</button>
     				</td>
     			</tr>
 
@@ -77,7 +83,7 @@
     				<td>Stephania Fletes Gonzales</td>
     				<td>Amplio</td>
     				<td>
-    					<button class="btn btn-success">Ver</button>
+    					<button class="btn btn-success"data-toggle="modal" data-target=".bd-example-modal-lg2">Ver</button>
     				</td>
     			</tr>
 				
@@ -86,7 +92,7 @@
 					<td>Juan Perez Vaca</td>
 					<td>Amplio</td>
 					<td>
-						<button class="btn btn-success">Ver</button>
+						<button class="btn btn-success"data-toggle="modal" data-target=".bd-example-modal-lg2">Ver</button>
 					</td>
 				</tr>
 
@@ -94,15 +100,20 @@
     	</table>
 
 		<!-- Modal -->
-			<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-			  <div class="modal-dialog modal-lg">
-			    <div class="modal-content">
-		      <div class="modal-header">
+
+
+		<!-- Modal -->
+	  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				
+				    <div class="modal-header">
 		        <h5 class="modal-title" id="exampleModalLongTitle">Agregar Socios</h5>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
+
 		      <div class="modal-body">
 
 		      	  <div class="row">
@@ -195,10 +206,11 @@
 				</div>
 
 				<div class="modal-header">
-		      <h5 >Domicilio</h5>
-		      <br>
-		  </div>
-		      <div class="modal-body">
+			      <h5 >Domicilio</h5>
+			      <br>
+		  		</div>
+
+		  				      <div class="modal-body">
 
 					<div class="row">
    	 				<div class="col-lg-2">
@@ -246,12 +258,13 @@
 				    </div>
 				</div>
 				    <br>
+				</div>
+				<div class="modal-header">
+			      <h5 >Contacto</h5>
+			      <br>
+			  </div>
 
-				    <div class="modal-header">
-		      <h5 >Contacto</h5>
-		      <br>
-		  </div>
-		      <div class="modal-body">
+			  <div class="modal-body">
 
 					<div class="row">
    	 				<div class="col-lg-2">
@@ -280,9 +293,10 @@
 				    <div class="col-lg-4">
 				     <button type="button" class="btn btn-primary" >Agregar Asociados</button>
 				    </div>
-				  	
-				  	
-						<table class="table table-bordered">
+				</div>
+				</div>
+
+				<table class="table table-bordered">
 						  <thead>
 						    <tr>
 						 <th scope="col">No. Membresia</th>
@@ -314,7 +328,7 @@
 						    </tbody>
 							</table>
 
-				  <div class="modal-footer">
+							<div class="modal-footer">
 
 				 <div class="row">
 
@@ -328,11 +342,19 @@
 					<div class="col-lg-2">
 			    	</div>
 			    </div>
+			</div>
 
-    		</div>
-    		
-    	</div>
-    	<br>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="modal fade bd-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
 
 		</div>
 
