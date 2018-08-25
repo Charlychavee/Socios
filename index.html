@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">﻿
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -11,7 +11,7 @@
     	
 td, th {
     border: 1px solid #dddddd;
-    text-align: left;
+    text-align: center;
     padding: 8px;
 }
     </style>
@@ -19,45 +19,43 @@ td, th {
     <title>Socios</title>
 </head>
 <body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		  <a class="navbar-brand" href="#">Menú</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Menú</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item ">
-		        <a class="nav-link" href="index.html">Socios </span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="consultas.html">Consultas</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="especialistas.html">Especialistas</a>
-		      </li>
-		    </ul>
-		  </div>
-		</nav>
-
-    <div class="col-lg-11">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item ">
+					<a class="nav-link" href="index.html">Socios </span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="consultas.html">Consultas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="especialistas.html">Especialistas</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
 	<div class="container">
 		<h1 class="text-center">Socios</h1>
-    	<hr>
+		<hr>
 
-    	<div class="row">
-    		<div class="col-lg-6 "></div>
-    		<div class="col-lg-3 ">
-    			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Agregar Socio</button>
+		<div class="row">
+			<div class="col-lg-6 "></div>
+			<div class="col-lg-3 ">
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Agregar Socio</button>
 
-    		</div>
-    		<div class="col-lg-3 ">
-    			<input class="form-control" type="text" placeholder="Buscar">
+			</div>
+			<div class="col-lg-3 ">
+				<input class="form-control" type="text" placeholder="Buscar">
     		</div>
     	</div>
     	<br>
-    	<table class="table table-striped text-center">
+    	<table class="table table-striped ">
     		<thead>
     			<tr>
     				<th>No Membresia</th>
@@ -106,351 +104,338 @@ td, th {
 
     		</tbody>
     	</table>
+		
 		<!-- Modal -->
-	  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-lg">
-				    <div class="modal-content">
-				
-				    <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLongTitle">Agregar Socios</h5>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
-		      </div>
+		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
 
-		      <div class="modal-body">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Agregar Socios</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
 
-		      	  <div class="row">
-   	 				<div class="col-lg-2">
-     				 <label class="form">Nombre: </label>
-				    </div>
-				    <div class="col-lg-5">
-				     <input class="form-control" type="text" name="Nombre">
-				    </div>
-				    <div class="col-lg-5">
-				    <img src="..." alt="..." class="img-thumbnail">
-				    <br>
-				    <button type="button" class="btn btn-link">Subir imagen</button>
-				    </div>
-				  </div>
-				  <br>
+					<div class="modal-body">
 
-					<div class="row">
-   	 				<div class="col-lg-2">
-     				 <label class="form">Cobertura: </label>
-				    </div>
-				    <div class="col-lg-5">
+						<div class="row">
+							<div class="col-lg-2">
+								<label class="form">Nombre: </label>
+							</div>
+							<div class="col-lg-5">
+								<input class="form-control" type="text" name="Nombre">
+							</div>
+							<div class="col-lg-5">
+								<img src="..." alt="..." class="img-thumbnail">
+								<br>
+								<button type="button" class="btn btn-link">Subir imagen</button>
+							</div>
+						</div>
+						<br>
 
-				     <div class="btn-group" role="group">
-    					<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				      --Seleccione Cobertura--
-				    </button>
-				    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-				      <a class="dropdown-item" href="#">Amplia</a>
-				      <a class="dropdown-item" href="#">Minima</a>
-				    </div>
-				  </div>
+						<div class="row">
+							<div class="col-lg-2">
+								<label class="form">Cobertura: </label>
+							</div>
+							<div class="col-lg-5">
 
-				    </div>
-				  </div>
-				  <br>
+								<div class="btn-group" role="group">
+									<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--Seleccione Cobertura--</button>
+									<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+										<a class="dropdown-item" href="#">Amplia</a>
+										<a class="dropdown-item" href="#">Minima</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
 
-				 <div class="row">
-   	 				<div class="col-lg-2">
-     				 <label class="form">Profesión: </label>
-				    </div>
-				    <div class="col-lg-5">
-				     <input class="form-control" type="text" name="Profesión">
-				    </div>
-				</div>
-				<br>
+						<div class="row">
+							<div class="col-lg-2">
+								<label class="form">Profesión: </label>
+							</div>
+							<div class="col-lg-5">
+								<input class="form-control" type="text" name="Profesión">
+							</div>
+						</div>
+						<br>
 
-				 <div class="row">
-   	 				<div class="col-lg-2">
-     				 <label class="form">Estado civil: </label>
-				    </div>
-				    <div class="col-lg-5">
-				     <div class="btn-group" role="group">
-    					<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				      --Estado Civil--
-				    </button>
-				    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-				      <a class="dropdown-item" href="#">Soltero</a>
-				      <a class="dropdown-item" href="#">Casado</a>
-				      <a class="dropdown-item" href="#">Viudo</a>
-				      <a class="dropdown-item" href="#">Divorciado</a>
-				    </div>
-				  </div>
-				    </div>
-				  </div>
-				  <br>
+						<div class="row">
+							<div class="col-lg-2">
+								<label class="form">Estado civil: </label>
+							</div>
+							<div class="col-lg-5">
+								<div class="btn-group" role="group">
+									<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--Estado Civil--</button>
+									<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+										<a class="dropdown-item" href="#">Soltero</a>
+				      					<a class="dropdown-item" href="#">Casado</a>
+									    <a class="dropdown-item" href="#">Viudo</a>
+									    <a class="dropdown-item" href="#">Divorciado</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
 
-				  <div class="row">
-   	 				<div class="col-lg-1">
-     				 <label class="form">Sexo: </label>
-				    </div>
-				    <div class="col-lg-4">
-				     <div class="btn-group" role="group">
-    					<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				      --Seleccione Sexo--
-				    </button>
-				    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-				      <a class="dropdown-item" href="#">Hombre</a>
-				      <a class="dropdown-item" href="#">Mujer</a>
-				    </div>
-				  </div>
-				    </div>
-				    <div class="col-lg-3">
-     				 <label class="form">Fecha de Nacimiento: </label>
-				    </div>
-				    <div class="col-lg-4">
-				     <input type="date" id="date">
-				    </div>
-				  </div>
-				</div>
+						<div class="row">
+							<div class="col-lg-1">
+								<label class="form">Sexo: </label>
+							</div>
+							<div class="col-lg-4">
+								<div class="btn-group" role="group">
+									<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> --Seleccione Sexo-- </button>
+									<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+										<a class="dropdown-item" href="#">Hombre</a>
+										<a class="dropdown-item" href="#">Mujer</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<label class="form">Fecha de Nacimiento: </label>
+							</div>
+							<div class="col-lg-4">
+								<input type="date" id="date">
+							</div>
+						</div>
+					</div>
 
-				<div class="modal-header">
-			      <h5 >Domicilio</h5>
-			      <br>
-		  		</div>
+					<div class="modal-header">
+						<h5 >Domicilio</h5>
+						<br>
+					</div>
 
-		  			<div class="modal-body">
+					<div class="modal-body">
 
-					<div class="row">
-   	 				<div class="col-lg-2">
-     				 <label class="form">Direccion: </label>
-				    </div>
-				    <div class="col-lg-4">
-				     <input class="form-control" type="text" name="Sexo">
-				    </div>
-				    <div class="col-lg-2">
-     				 <label class="form">Colonia:  </label>
-				    </div>
-				    <div class="col-lg-4">
-				     <input class="form-control" type="text" name="FechaNa">
-				    </div>
-				</div>
-				    <br>
+						<div class="row">
+							<div class="col-lg-2">
+								<label class="form">Direccion: </label>
+							</div>
+							<div class="col-lg-4">
+								<input class="form-control" type="text" name="Sexo">
+							</div>
+							<div class="col-lg-2">
+								<label class="form">Colonia:  </label>
+							</div>
+							<div class="col-lg-4">
+								<input class="form-control" type="text" name="FechaNa">
+							</div>
+						</div>
+						<br>
 
-				    <div class="row">
-   	 				<div class="col-lg-2">
-     				 <label class="form">Municipio: </label>
-				    </div>
-				    <div class="col-lg-4">
-				     <input class="form-control" type="text" name="Municipio">
-				    </div>
-				    <div class="col-lg-2">
-     				 <label class="form">Estado:  </label>
-				    </div>
-				    <div class="col-lg-4">
-				     <input class="form-control" type="text" name="Estado">
-				    </div>
-				</div>
-				    <br>
-				    <div class="row">
-   	 				<div class="col-lg-2">
-     				 <label class="form">Pais: </label>
-				    </div>
-				    <div class="col-lg-4">
-				     <input class="form-control" type="text" name="Pais">
-				    </div>
-				    <div class="col-lg-2">
-     				 <label class="form">C.P:  </label>
-				    </div>
-				    <div class="col-lg-4">
-				     <input class="form-control" type="text" name="C.P">
-				    </div>
-				</div>
-				    <br>
-				</div>
-				<div class="modal-header">
-			      <h5 >Contacto</h5>
-			      <br>
-			  </div>
+						<div class="row">
+							<div class="col-lg-2">
+								<label class="form">Municipio: </label>
+							</div>
+							<div class="col-lg-4">
+								<input class="form-control" type="text" name="Municipio">
+							</div>
+							<div class="col-lg-2">
+								<label class="form">Estado:  </label>
+							</div>
+							<div class="col-lg-4">
+								<input class="form-control" type="text" name="Estado">
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-lg-2">
+								<label class="form">Pais: </label>
+							</div>
+							<div class="col-lg-4">
+								<input class="form-control" type="text" name="Pais">
+							</div>
+							<div class="col-lg-2">
+								<label class="form">C.P:  </label>
+							</div>
+							<div class="col-lg-4">
+								<input class="form-control" type="text" name="C.P">
+							</div>
+						</div>
+						<br>
+					</div>
+					<div class="modal-header">
+						<h5>Contacto</h5>
+						<br>
+					</div>
 
-			  <div class="modal-body">
+					<div class="modal-body">
 
-					<div class="row">
-   	 				<div class="col-lg-2">
-     				 <label class="form">Telefono: </label>
-				    </div>
-				    <div class="col-lg-4">
-				     <input class="form-control" type="text" name="Telefono">
-				    </div>
-				    <div class="col-lg-2">
-     				 <label class="form">e-mail:  </label>
-				    </div>
-				    <div class="col-lg-4">
-				     <input class="form-control" type="text" name="mail">
-				    </div>
-				</div>
-				    <br>
+						<div class="row">
+							<div class="col-lg-2">
+								<label class="form">Telefono: </label>
+							</div>
+							<div class="col-lg-4">
+								<input class="form-control" type="text" name="Telefono">
+							</div>
+							<div class="col-lg-2">
+								<label class="form">e-mail:  </label>
+							</div>
+							<div class="col-lg-4">
+								<input class="form-control" type="text" name="mail">
+							</div>
+						</div>
+						<br>
+						
+						<div class="modal-header">
+							<h5>Asociados</h5>
+							<br>
+						</div>
 
-				     <div class="modal-header">
-				      <h5 >Asociados</h5>
-				      <br>
-				  	</div>
+						<div class="row">
+							<div class="col-lg-8">
+							</div>
+							<div class="col-lg-4">
+								<button type="button" class="btn btn-primary" >Agregar Asociados</button>
+							</div>
+						</div>
+					</div>
 
-				  	<div class="row">
-   	 				<div class="col-lg-8">
-				    </div>
-				    <div class="col-lg-4">
-				     <button type="button" class="btn btn-primary" >Agregar Asociados</button>
-				    </div>
-				</div>
-				</div>
-
-				<table class="table table-bordered">
-						  <thead>
-						    <tr>
-						 <th scope="col">No. Membresia</th>
-					      <th scope="col">Asociado</th>
-					      <th scope="col">Detalles</th>
-					    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <th scope="row"></th>
-						      <td></td>
-						      <td></td>
-
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th scope="col">No. Membresia</th>
+					      		<th scope="col">Asociado</th>
+					      		<th scope="col">Detalles</th>
+					      	</tr>
+					      </thead>
+					      <tbody>
+					      	<tr>
+					      		<th scope="row"></th>
+						      	<td></td>
+						     	<td></td>
 						    </tr>
 
 						    <tr>
-						      <th scope="row"></th>
-						      <td></td>
-						      <td></td>
-
+						      	<th scope="row"></th>
+						    	<td></td>
+						      	<td></td>
 						    </tr>
 
 						    <tr>
-						      <th scope="row"></th>
-						      <td></td>
-						      <td></td>
-
+						      	<th scope="row"></th>
+						      	<td></td>
+						      	<td></td>
 						    </tr>
-						    </tbody>
-							</table>
+						</tbody>
+					</table>
 
-							<div class="modal-footer">
+					<div class="modal-footer">
 
-				 <div class="row">
+						<div class="row">
+					 		<div class="col-lg-2">
+					 		
+					 		</div>
 
-   	 				<div class="col-lg-2">
-				    </div>
+					 		<div class="col-lg-6">
+					 			<button type="button" class="btn btn-primary">Agregar Socio</button>
+					 		</div>
 
-				    <div class="col-lg-6">
-		        	<button type="button" class="btn btn-primary">Agregar Socio</button>
-		        	</div>
+					 		<div class="col-lg-2">
+					 		</div>
+					 	</div>
+					 </div>
 
-					<div class="col-lg-2">
-			    	</div>
-			    </div>
+					</div>
+				</div>
 			</div>
-
-				    </div>
-				  </div>
-				</div>
 		<!-- Modal 2 -->
-				<div class="modal fade bd-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-lg">
-				    <div class="modal-content">
-				 <div class="modal-body">
-		      	
-		      	<div class="row">
-		      		<div class="col-lg-3">
-				    <img src="..." alt="..." class="img-thumbnail">
-				    <br>
-				    <button type="button" class="btn btn-link">Subir imagen</button>
-				     </div>
-   	 				<div class="col-lg-6">
-     				 <h4>Nombre: Felipe Zamora Fuentes </h4>
-				    </div>
-				  </div>
+		<div class="modal fade bd-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
 
-				  <div class="row">
-				    <div class="col-lg-3">
-				    </div>
-   	 				<div class="col-lg-4">
-     				 <h6>Cobertura: Amplia </h6>
-				    </div>
-				    <div class="col-lg-1">
-     				 <h6>Status </h6>
-				    </div>
-				    <div class="col-lg-3">
-				    	<button type="button" class="btn btn-success" disabled="">Activo</button>
-				    </div>
+						<div class="row">
+							<div class="col-lg-3">
+								<img src="..." alt="..." class="img-thumbnail">
+								<br>
+								<button type="button" class="btn btn-link">Subir imagen</button>
+							</div>
+							<div class="col-lg-6">
+								<h4>Nombre: Felipe Zamora Fuentes </h4>
+							</div>
+						</div>
 
-				  </div>
+						<div class="row">
+							<div class="col-lg-3">
+							</div>
+							<div class="col-lg-4">
+								<h6>Cobertura: Amplia </h6>
+							</div>
+							<div class="col-lg-1">
+								<h6>Status </h6>
+							</div>
+							<div class="col-lg-3">
+								<button type="button" class="btn btn-success" disabled="">Activo</button>
+							</div>
+						</div>
 
-				  <div class="row">
-				    <div class="col-lg-3">
-				    </div>
-   	 				<div class="col-lg-6">
-     				 <h6>Socio desde: 14/04/2012 </h6>
-				    </div>
-				  </div>
+						<div class="row">
+							<div class="col-lg-3">
+							</div>
+							<div class="col-lg-6">
+								<h6>Socio desde: 14/04/2012 </h6>
+							</div>
+						</div>
 
-				  <div class="row">
-				    <div class="col-lg-3">
-				    </div>
-   	 				<div class="btn-group col-lg-1" role="group" aria-label="Third group">
-    				<button type="button" class="btn btn-secondary">...</button>
-  					</div>
-  					<div class="btn-group col-lg-1" role="group" aria-label="Third group">
-    				<button type="button" class="btn btn-secondary">B</button>
-  					</div>
-				  </div>
+						<div class="row">
+							<div class="col-lg-3">
+							</div>
+							<div class="btn-group col-lg-1" role="group" aria-label="Third group">
+								<button type="button" class="btn btn-secondary">...</button>
+							</div>
+							<div class="btn-group col-lg-1" role="group" aria-label="Third group">
+								<button type="button" class="btn btn-secondary">B</button>
+							</div>
+						</div>
 
-				  <div class="modal-header">
-				  	<h3>Asociados</h3>
-				  </div>
+						<div class="modal-header">
+							<h3>Asociados</h3>
+						</div>
 
-				<table class="table table-striped text-center">
-    			<thead>
-    			<tr>
-    				<th>No Membresia</th>
-    				<th>Asociado</th>
-    				<th>Detalles</th>
-    			</tr>
+						<table class="table table-striped text-center">
+							<thead>
+								<tr>
+									<th>No Membresia</th>
+									<th>Asociado</th>
+    								<th>Detalles</th>
+    							</tr>
 
-    		</thead>
-    		<tbody>
-    			<tr>
-    				<td>001</td>
-    				<td>Felipe Zamora Fuentes</td>
-    				<td></td>
-    			</tr>
+    						</thead>
+    						<tbody>
+    							<tr>
+    								<td>001</td>
+    								<td>Felipe Zamora Fuentes</td>
+    								<td></td>
+    							</tr>
 
-    			<tr>
-    				<td>002</td>
-    				<td>Itzel Savila Contreras</td>
-    				<td></td>
-    			</tr>
+    							<tr>
+    								<td>002</td>
+    								<td>Itzel Savila Contreras</td>
+    								<td></td>
+    							</tr>
 
-    			<tr>
-    				<td>003</td>
-    				<td>Stephania Fletes Gonzalez</td>
-    				<td></td>
-    			</tr>
+    							<tr>
+    								<td>003</td>
+    								<td>Stephania Fletes Gonzalez</td>
+    								<td></td>
+    							</tr>
 				
-				<tr>
-					<td>004</td>
-					<td>Juan Perez Vaca</td>
-					<td></td>
-				</tr>
-    		</tbody>
-    	</table>
+								<tr>
+									<td>004</td>
+									<td>Juan Perez Vaca</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 
-		    </div>
-		  </div>
+					</div>
+				</div>
+			</div>
 		</div>
-
-		</div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    
-</body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  	</body>
 </html>
