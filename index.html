@@ -51,10 +51,11 @@ td, th {
 
 			</div>
 			<div class="col-lg-3 ">
-				<input class="form-control" type="text" placeholder="Buscar">
+				<input class="form-control" type="text" placeholder="Buscar" id=inp_Buscar>
     		</div>
     	</div>
     	<br>
+    	
     	<table class="table table-striped ">
     		<thead>
     			<tr>
@@ -124,7 +125,7 @@ td, th {
 								<label class="form">Nombre: </label>
 							</div>
 							<div class="col-lg-5">
-								<input class="form-control" type="text" name="Nombre">
+								<input class="form-control" type="text" name="Nombre" id="lbl_nombre">
 							</div>
 							<div class="col-lg-5">
 								<img src="..." alt="..." class="img-thumbnail">
@@ -141,7 +142,7 @@ td, th {
 							<div class="col-lg-5">
 
 								<div class="btn-group" role="group">
-									<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--Seleccione Cobertura--</button>
+									<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn_cobertura">--Seleccione Cobertura--</button>
 									<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
 										<a class="dropdown-item" href="#">Amplia</a>
 										<a class="dropdown-item" href="#">Minima</a>
@@ -156,7 +157,7 @@ td, th {
 								<label class="form">Profesión: </label>
 							</div>
 							<div class="col-lg-5">
-								<input class="form-control" type="text" name="Profesión">
+								<input class="form-control" type="text" name="Profesión" id="lbl_profecion">
 							</div>
 						</div>
 						<br>
@@ -167,7 +168,7 @@ td, th {
 							</div>
 							<div class="col-lg-5">
 								<div class="btn-group" role="group">
-									<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--Estado Civil--</button>
+									<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="bnt_estado">--Estado Civil--</button>
 									<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
 										<a class="dropdown-item" href="#">Soltero</a>
 				      					<a class="dropdown-item" href="#">Casado</a>
@@ -185,7 +186,7 @@ td, th {
 							</div>
 							<div class="col-lg-4">
 								<div class="btn-group" role="group">
-									<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> --Seleccione Sexo-- </button>
+									<button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn_sexo"> --Seleccione Sexo-- </button>
 									<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
 										<a class="dropdown-item" href="#">Hombre</a>
 										<a class="dropdown-item" href="#">Mujer</a>
@@ -196,7 +197,7 @@ td, th {
 								<label class="form">Fecha de Nacimiento: </label>
 							</div>
 							<div class="col-lg-4">
-								<input type="date" id="date">
+								<input type="date" id="date" id="lbl_fecha">
 							</div>
 						</div>
 					</div>
@@ -213,13 +214,13 @@ td, th {
 								<label class="form">Direccion: </label>
 							</div>
 							<div class="col-lg-4">
-								<input class="form-control" type="text" name="Sexo">
+								<input class="form-control" type="text" name="direccion" id="lbl_direccion">
 							</div>
 							<div class="col-lg-2">
 								<label class="form">Colonia:  </label>
 							</div>
 							<div class="col-lg-4">
-								<input class="form-control" type="text" name="FechaNa">
+								<input class="form-control" type="text" name="colonia" id="lbl_colonia">
 							</div>
 						</div>
 						<br>
@@ -229,13 +230,13 @@ td, th {
 								<label class="form">Municipio: </label>
 							</div>
 							<div class="col-lg-4">
-								<input class="form-control" type="text" name="Municipio">
+								<input class="form-control" type="text" name="Municipio" id="lbl_municipio">
 							</div>
 							<div class="col-lg-2">
 								<label class="form">Estado:  </label>
 							</div>
 							<div class="col-lg-4">
-								<input class="form-control" type="text" name="Estado">
+								<input class="form-control" type="text" name="Estado" id="lbl_estado">
 							</div>
 						</div>
 						<br>
@@ -244,13 +245,13 @@ td, th {
 								<label class="form">Pais: </label>
 							</div>
 							<div class="col-lg-4">
-								<input class="form-control" type="text" name="Pais">
+								<input class="form-control" type="text" name="Pais" id="lbl_pais">
 							</div>
 							<div class="col-lg-2">
 								<label class="form">C.P:  </label>
 							</div>
 							<div class="col-lg-4">
-								<input class="form-control" type="text" name="C.P">
+								<input class="form-control" type="text" name="C.P" id="lbl_cp">
 							</div>
 						</div>
 						<br>
@@ -267,13 +268,13 @@ td, th {
 								<label class="form">Telefono: </label>
 							</div>
 							<div class="col-lg-4">
-								<input class="form-control" type="text" name="Telefono">
+								<input class="form-control" type="text" name="Telefono" id="lbl_telefono">
 							</div>
 							<div class="col-lg-2">
 								<label class="form">e-mail:  </label>
 							</div>
 							<div class="col-lg-4">
-								<input class="form-control" type="text" name="mail">
+								<input class="form-control" type="text" name="mail" id="lbl_email">
 							</div>
 						</div>
 						<br>
@@ -287,7 +288,7 @@ td, th {
 							<div class="col-lg-8">
 							</div>
 							<div class="col-lg-4">
-								<button type="button" class="btn btn-primary" >Agregar Asociados</button>
+								<button type="button" class="btn btn-primary" id="btn_agregarAso">Agregar Asociados</button>
 							</div>
 						</div>
 					</div>
@@ -329,7 +330,7 @@ td, th {
 					 		</div>
 
 					 		<div class="col-lg-6">
-					 			<button type="button" class="btn btn-primary">Agregar Socio</button>
+					 			<button type="button" class="btn btn-primary" id="btn_agregarSoc">Agregar Socio</button>
 					 		</div>
 
 					 		<div class="col-lg-2">

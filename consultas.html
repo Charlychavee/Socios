@@ -53,7 +53,7 @@
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Agregar Consulta</button>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-3">
-					<input class="form-control" type="text" placeholder="Membresia, nombre">
+					<input class="form-control" type="text" placeholder="Membresia, nombre" id="inp_buscar">
     			</div>
     		</div>
     		<br>
@@ -74,8 +74,8 @@
     					<td>Felipe Zamora Fuentes</td>
     					<td>9:00 a.m</td>
     					<td>
-    						<button class="btn btn-success"data-toggle="modal" data-target=".bd-example-modal-lg1">Ver</button>
-    						<button class="btn btn-danger"data-toggle="modal" data-target=".bd-example-modal-lg1">Borrar</button>
+    						<button class="btn btn-success"data-toggle="modal" data-target=".bd-example-modal-lg1" id="btnEditar">Editar</button>
+    						<button class="btn btn-danger"data-toggle="modal" data-target=".bd-example-modal-lg1" id="btn_borrar">Borrar</button>
     					</td>
     				</tr>
 
@@ -126,7 +126,7 @@
 		    				</div>
 		    				<div class="col-lg-4">
 		    					<br>
-		    					<select id="select" >
+		    					<select id="select" id="slc_especialidad">
 		    						<option value=> - Seleccione - </option>
 				     				<option value>Cardiología</option>
 				     				<option value>Neurología</option>
@@ -143,7 +143,7 @@
 				     		</div>
 				     		<div class="col-lg-4">
 				     			<br>
-				     			<select id="select" >
+				     			<select id="select" id="slc_medico">
 				     				<option value=> - Seleccione - </option>
 				     				<option value>Meredith</option>
 				     				<option value>Cristina</option>
@@ -160,7 +160,7 @@
 				    		</div>
 				    		<div class="col-lg-2">
 				    			<br>
-				    			<input class="form-control" type="text" name="numeromem">
+				    			<input class="form-control" type="text" name="numeromem" id="lbl_membresia"> 
 				    		</div>
 				    		<div class="col-lg-2">
 				    		</div>
@@ -175,7 +175,7 @@
 				    		</div>
 				    		<div class="col-lg-4">
 				    			<br>
-				    			<select id="select" >
+				    			<select id="select" id="slc_socio">
 				    				<option value=> - Seleccione - </option>
 				     				<option value>Juan</option>
 				     				<option value>Carlos</option>
@@ -192,7 +192,7 @@
 				     		</div>
 				     		<div class="col-lg-4">
 				     			<br>
-				     			<select id="select" >
+				     			<select id="select" id="slc_horrario">
 				     				<option value=> - Seleccione - </option>
 				     				<option value>13:00</option>
 				     				<option value>13:30</option>
@@ -210,7 +210,7 @@
 				  			</div>
 
 				  			<div class="col-lg-10">
-				  				<button type="button" class="btn btn-primary btn-block">Guardar Cita</button><br>
+				  				<button type="button" class="btn btn-primary btn-block" id="btn_guardar">Guardar Cita</button><br>
 				  			</div>
 
 				  			<div class="col-lg-1">
